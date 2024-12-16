@@ -10,6 +10,9 @@
     overflow: hidden;
     position: relative;
     background-color: #000000;
+    border: #000000;
+    margin: 0;
+    padding: 0;
 }
 
 /* Slider styles */
@@ -146,10 +149,9 @@
     z-index: 0;
 }
 
-/* For Tablets (1023px and below) */
 @media screen and (max-width: 1023px) {
     .banner .slider {
-        width: 180px; /* Smaller image width */
+        width: 120px; /* Smaller image width */
         height: 220px; /* Smaller image height */
         left: calc(50% - 90px);
     }
@@ -158,13 +160,17 @@
                     translateZ(250px); /* Slightly reduce Z distance */
     }
     .banner .content h1 {
-        font-size: 0.5em; /* Reduce font size */
-        line-height: 0.6em;
+        font-family: 'ITC Rubrik', sans-serif;
+        font-size: 1em; /* Responsive font size */
+        line-height: 1em;
+        top: 20%;
+        color: rgb(195, 0, 0);
+        text-transform: uppercase;
         position: relative;
-        top: -60px; /* Move the text higher */
-        margin: 0 auto;
-        text-align: center;
         z-index: 1; /* Layering below images */
+    }
+    
+        
     }
     .banner .author {
         position: absolute;
@@ -195,7 +201,7 @@
 @media screen and (max-width: 767px) {
     .banner .slider {
         width: 120px; /* Smaller image width */
-        height: 160px; /* Smaller image height */
+        height: 220px; /* Smaller image height */
         left: calc(50% - 60px);
     }
     .banner .slider .item {
@@ -203,13 +209,14 @@
                     translateZ(200px); /* Adjust depth */
     }
     .banner .content h1 {
-        font-size: 0.5em; /* Smaller font size for mobile */
-        line-height: 0.6em;
+        font-family: 'ITC Rubrik', sans-serif;
+        font-size: 1em; /* Responsive font size */
+        line-height: 1em;
+        top: 20%;
+        color: rgb(195, 0, 0);
+        text-transform: uppercase;
         position: relative;
-        top: -50px; /* Move the text higher */
-        margin: 0 auto;
-        text-align: center;
-        z-index: 1;
+        z-index: 1; /* Layering below images */
     }
     .banner .author {
         position: absolute;
@@ -235,3 +242,4 @@
         margin: 0.5em 0;
     }
 }
+
