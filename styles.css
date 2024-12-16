@@ -180,13 +180,13 @@
     }
     
     .banner .author h2 {
-        font-size: 1em;
+        font-size: 2em;
         margin: 0;
     }
     
     .banner .author p {
-        font-size: 0.5em;
-        line-height: 0.6em;
+        font-size: 1em;
+        line-height: 1.5em;
         margin: 0.5em 0;
     }
 }
@@ -225,13 +225,13 @@
     }
     
     .banner .author h2 {
-        font-size: 1em;
+        font-size: 2em;
         margin: 0;
     }
     
     .banner .author p {
-        font-size: 0.5em;
-        line-height: 0.6em;
+        font-size: 1em;
+        line-height: 1.5em;
         margin: 0.5em 0;
     }
 }
