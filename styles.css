@@ -158,13 +158,36 @@
                     translateZ(250px); /* Slightly reduce Z distance */
     }
     .banner .content h1 {
-        font-size: 1em; /* Reduce font size */
+        font-size: 0.5em; /* Reduce font size */
         line-height: 0.6em;
         position: relative;
         top: -60px; /* Move the text higher */
         margin: 0 auto;
         text-align: center;
         z-index: 1; /* Layering below images */
+    }
+    .banner .author {
+        position: absolute;
+        bottom: 20px; /* Place it near the bottom */
+        right: 20px; /* Place it near the right edge */
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        max-width: 400px;
+        z-index: 3;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+    }
+    
+    .banner .author h2 {
+        font-size: 1em;
+        margin: 0;
+    }
+    
+    .banner .author p {
+        font-size: 0.5em;
+        line-height: 0.6em;
+        margin: 0.5em 0;
     }
 }
 
@@ -187,5 +210,28 @@
         margin: 0 auto;
         text-align: center;
         z-index: 1;
+    }
+    .banner .author {
+        position: absolute;
+        bottom: 20px; /* Place it near the bottom */
+        right: 20px; /* Place it near the right edge */
+        font-family: 'Poppins', sans-serif;
+        text-align: left;
+        max-width: 400px;
+        z-index: 3;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+    }
+    
+    .banner .author h2 {
+        font-size: 1em;
+        margin: 0;
+    }
+    
+    .banner .author p {
+        font-size: 0.5em;
+        line-height: 0.6em;
+        margin: 0.5em 0;
     }
 }
