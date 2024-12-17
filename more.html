@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Image Carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body class="more-page">
+
+<!-- Navigation Bar -->
+<header>
+    <div class="navbar">
+        <div class="logo"><a href="#">AAN</a></div>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="more-info.html">more info</a></li>
+            <li><a href="more.html">more</a></li>
+        </ul>
+        <a href="#" class="action_btn">Get Started</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </div>
+    </div>
+
+    <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+            <li><a href="more-info.html">more info</a></li>
+            <li><a href="more.html">more</a></li>
+            <li><a href="#" class="action_btn">Get Started</a></li>
+    </div>
+</header>
+            <!-- Author Section -->
+        <div class="author">
+            <h2>I LOVE YOU</h2>
+            <p><b>.......</b></p>
+            <p>
+                ..........
+            </p>
+        </div>
+
+        <!-- Model Section -->
+        <div class="model"></div>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn');
+            const toggleBtnIcon = document.querySelector('.toggle_btn i');
+            const dropDownMenu = document.querySelector('.dropdown_menu');
+          
+            // Toggle Menu
+            toggleBtn.onclick = function () {
+              dropDownMenu.classList.toggle('open'); // Add or remove "open" class
+              const isOpen = dropDownMenu.classList.contains('open');
+          
+              // Change Icon
+              toggleBtnIcon.className = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars';
+            };
+          
+            // Debugging
+            console.log('Dropdown Menu Found:', dropDownMenu);
+            console.log('Toggle Button Found:', toggleBtn);
+          </script>
+
+    </div>
+
+</body>
+</html>

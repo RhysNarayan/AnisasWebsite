@@ -3,6 +3,16 @@
 
 /* General banner styles */
 
+.more-info-page{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.more-page{
+    background-color: #000000;
+    color: #ffffff;
+}
+
 .banner {
     width: 100%;
     height: 100vh;
@@ -13,6 +23,125 @@
     border: #000000;
     margin: 0;
     padding: 0;
+}
+
+/* General Navbar Styling */
+
+
+li{
+    list-style: none;
+   
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    
+}
+
+a:hover{
+    color: rgb(195, 0, 0);
+}
+
+header{
+    background-color: #000000;
+    position: relative;
+    padding: 0 2rem;
+
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font: size 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border:none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover{
+    scale: 1.05;
+    color: #ffffff;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background-color:rgb(12, 5, 5);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 240px;
+    display: block;
+}
+
+.dropdown_menu li{
+    padding:10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Hamburger Menu */
+
+
+.menu-toggle .bar {
+    background-color: #ffffff;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: 0.3s;
 }
 
 /* Slider styles */
@@ -150,6 +279,33 @@
 }
 
 @media screen and (max-width: 1023px) {
+    /*navbar*/
+    .navbar .links,
+    .navbar .action_btn {
+        display: none; /* Hide original nav links */
+    }
+
+    .navbar .toggle_btn {
+        display: block; /* Show hamburger icon */
+    }
+
+    .dropdown_menu {
+        position: absolute;
+        top: 60px; /* Align below navbar */
+        right: 30%;
+        background: #000000; /* Match navbar color */
+        z-index: 999; /* Ensure visibility */
+        border-radius: 10px;
+        padding: 10px 0;
+    }
+
+    .dropdown_menu li {
+        text-align: center;
+    }
+
+
+
+
     .banner .slider {
         width: 120px; /* Smaller image width */
         height: 220px; /* Smaller image height */
@@ -159,19 +315,20 @@
         transform: rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
                     translateZ(250px); /* Slightly reduce Z distance */
     }
-    .banner .content h1 {
-        font-family: 'ITC Rubrik', sans-serif;
-        font-size: 1em; /* Responsive font size */
-        line-height: 1em;
-        top: 20%;
+
+    .slider .item.text-item p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Poppins', sans-serif;
+        font-size: 3em;
         color: rgb(195, 0, 0);
-        text-transform: uppercase;
-        position: relative;
-        z-index: 1; /* Layering below images */
+        text-align: center;
+        margin: 0;
+        z-index: 1;  /* Ensure text appears on the same plane as images */
     }
-    
-        
-    }
+
     .banner .author {
         position: absolute;
         bottom: 20px; /* Place it near the bottom */
@@ -197,8 +354,35 @@
     }
 }
 
+
 /* For Mobile Devices (767px and below) */
 @media screen and (max-width: 767px) {
+
+    /*navbar*/
+    .navbar .links,
+    .navbar .action_btn {
+        display: none; /* Hide original nav links */
+    }
+
+    .navbar .toggle_btn {
+        display: block; /* Show hamburger icon */
+    }
+
+    .dropdown_menu {
+        position: absolute;
+        top: 60px; /* Align below navbar */
+        right: 20%;
+        background: #000000;
+        z-index: 999; /* Ensure visibility */
+        border-radius: 10px;
+        padding: 10px 0;
+    }
+
+    .dropdown_menu li {
+        text-align: center;
+    }
+
+
     .banner .slider {
         width: 120px; /* Smaller image width */
         height: 220px; /* Smaller image height */
@@ -208,16 +392,21 @@
         transform: rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
                     translateZ(200px); /* Adjust depth */
     }
-    .banner .content h1 {
-        font-family: 'ITC Rubrik', sans-serif;
-        font-size: 1em; /* Responsive font size */
-        line-height: 1em;
-        top: 20%;
+
+    .slider .item.text-item p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.9em;
         color: rgb(195, 0, 0);
-        text-transform: uppercase;
-        position: relative;
-        z-index: 1; /* Layering below images */
+        text-align: center;
+        margin: 0;
+        z-index: 1;  /* Ensure text appears on the same plane as images */
     }
+
+
     .banner .author {
         position: absolute;
         bottom: 20px; /* Place it near the bottom */
@@ -228,7 +417,7 @@
         z-index: 3;
         padding: 20px;
         border-radius: 10px;
-        color: white;
+        color: rgb(255, 255, 255);
     }
     
     .banner .author h2 {
