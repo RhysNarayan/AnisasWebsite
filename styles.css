@@ -8,6 +8,226 @@
     color: #ffffff;
 }
 
+/***********/
+/*Author 2*/
+/***********/
+
+.more-info-page .author2 h1{
+text-align: center;
+font-weight: bold;
+font-size: 4em;
+}
+
+.more-info-page .author2 .Places h2{
+ text-align: center;
+ font-weight: bold;
+ font-size: 3em;
+}
+.more-info-page .author2 .Places {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 40px; 
+}
+
+.more-info-page .author2 .Places .item1 {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+    width: 100%; 
+}
+
+.more-info-page .author2 .Places .item1 img {
+    height: 400px; 
+    width: 450px; 
+    object-fit: cover; 
+}
+
+.more-info-page .author2 .Places .item1 p {
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0; 
+    flex: 1; 
+}
+
+
+.more-info-page .author2 h1{
+text-align: center;
+font-weight: bold;
+font-size: 4em;
+}
+
+.more-info-page .author2 .Places h2{
+ text-align: center;
+ font-weight: bold;
+ font-size: 3em;
+}
+.more-info-page .author2 .Places {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 40px; 
+}
+
+.more-info-page .author2 .Places .item1 {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+    width: 100%; 
+}
+
+.more-info-page .author2 .Places .item1 img {
+    height: 400px; 
+    width: 450px; 
+    object-fit: cover; 
+}
+
+.more-info-page .author2 .Places .item1 p {
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0; 
+    flex: 1; 
+}
+
+/***********/
+/*Author 3*/
+/***********/
+
+.more-info-page .author3 h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.more-info-page .author3 .Places2 h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.more-info-page .author3 .Places2 {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the whole block */
+    gap: 40px; /* Adds spacing between items */
+}
+
+.more-info-page .author3 .Places2 .item2 {
+    display: flex;
+    flex-direction: row-reverse; /* Swap image and text: image on the right, text on the left */
+    align-items: center; /* Vertically align content */
+    justify-content: center; /* Center content */
+    gap: 20px; /* Space between image and text */
+    width: 100%; /* Take full width */
+}
+
+.more-info-page .author3 .Places2 .item2 img {
+    height: 400px; /* Fixed height */
+    width: 450px; /* Fixed width */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.more-info-page .author3 .Places2 .item2 p {
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0; /* Remove default margin */
+    flex: 1; /* Allow text to take remaining space */
+}
+
+/***********/
+/*Author 4*/
+/***********/
+    
+    .more-info-page .author4 .Places3 h2{
+     text-align: center;
+     font-weight: bold;
+     font-size: 3em;
+    }
+    .more-info-page .author4 .Places3 {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 40px; 
+    }
+    
+    .more-info-page .author4 .Places3 .item3 {
+        display: flex;
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: center; 
+        gap: 20px; 
+        width: 100%; 
+    }
+    
+    .more-info-page .author4 .Places3 .item3 img {
+        height: 400px; 
+        width: 450px; 
+        object-fit: cover; 
+    }
+    
+    .more-info-page .author4 .Places3 .item3 p {
+        font-size: 25px;
+        color: #ffffff;
+        text-align: center;
+        margin: 0; 
+        flex: 1; 
+    }
+    
+    
+    .more-info-page .author4 h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+    }
+    
+    .more-info-page .author4 .Places3 h2{
+     text-align: center;
+     font-weight: bold;
+     font-size: 3em;
+    }
+    .more-info-page .author4 .Places3 {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 40px; 
+    }
+    
+    .more-info-page .author4 .Places3 .item1 {
+        display: flex;
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: center; 
+        gap: 20px; 
+        width: 100%; 
+    }
+    
+    .more-info-page .author4 .Places3 .item3 img {
+        height: 400px; 
+        width: 450px; 
+        object-fit: cover; 
+    }
+    
+    .more-info-page .author4 .Places3 .item3 p {
+        font-size: 25px;
+        color: #ffffff;
+        text-align: center;
+        margin: 0; 
+        flex: 1; 
+    }
+
+
+
+/***********/
+/*Main*/
+/***********/
+
 .more-page{
     background-color: #000000;
     color: #ffffff;
@@ -279,6 +499,36 @@ header{
 }
 
 @media screen and (max-width: 1023px) {
+    
+    .more-info-page .author2 .Places .item1 {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center; /* Center-align the text */
+    }
+
+    .more-info-page .author2 .Places .item1 img {
+        margin-bottom: 10px; /* Add spacing between image and text */
+    }
+
+
+
+    .more-info-page .author3 .Places2 .item2 {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center; /* Center-align the text */
+    }
+
+    .more-info-page .author3 .Places2 .item2 img {
+        margin-bottom: 10px; /* Add spacing between image and text */
+    }
+
+    .more-info-page .author4 .Places3 .item3 {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center; /* Center-align the text */
+    }
+
+    .more-info-page .author4 .Places3 .item3 img {
+        margin-bottom: 10px; /* Add spacing between image and text */
+    }
+
     /*navbar*/
     .navbar .links,
     .navbar .action_btn {
@@ -357,6 +607,34 @@ header{
 
 /* For Mobile Devices (767px and below) */
 @media screen and (max-width: 767px) {
+
+    .more-info-page .author2 .Places .item1 {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center; /* Center-align the text */
+    }
+
+    .more-info-page .author2 .Places .item1 img {
+        margin-bottom: 10px; /* Add spacing between image and text */
+    }
+
+
+    .more-info-page .author3 .Places2 .item2 {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center; /* Center-align the text */
+    }
+
+    .more-info-page .author3 .Places2 .item2 img {
+        margin-bottom: 10px; /* Add spacing between image and text */
+    }
+
+    .more-info-page .author4 .Places3 .item3 {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center; /* Center-align the text */
+    }
+
+    .more-info-page .author4 .Places3 .item3 img {
+        margin-bottom: 10px; /* Add spacing between image and text */
+    }
 
     /*navbar*/
     .navbar .links,
